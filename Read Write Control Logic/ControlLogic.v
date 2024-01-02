@@ -12,6 +12,7 @@ input [7:0] DBus,
 output reg LTIM,
 output reg SNGL,
 output reg IC4,
+output reg [4:0] TReg,
 output reg [7:0] SReg,
 output reg SFNM,
 output reg BUF,
@@ -39,6 +40,7 @@ output reg readIMR
 			end
 
 			else if(ICW2flag) begin
+				TReg <= DBus[7:3];
 				if (IC4 == 0) begin
 					SFNM <= 1'b0;
 					AEOI <= 1'b0;
@@ -94,6 +96,7 @@ module controlLogicTB ();
 	reg [2:0] interruptLocation;
 
 	wire LTIM, SNGL, IC4, SFNM, BUF, MS, AEOI, R, SL, EOI, readIRR, readISR, readIMR;
+	wire [7:3] TReg;
 	wire [7:0] SReg;
 	wire [7:0] MReg;
 
@@ -194,6 +197,7 @@ module controlLogicTB ();
 	LTIM,
 	SNGL,
 	IC4,
+	TReg,
 	SReg,
 	SFNM,
 	BUF,
