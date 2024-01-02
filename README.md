@@ -201,19 +201,19 @@
         <td>Abdullah Mohammed</td>
         <td>2001803</td>
         <td><a href="https://github.com/AntiHexCode">AntiHexCode</a></td>
-        <td>Control logic, Read Logic, PIC8259A</td>
+        <td>Control logic, Read Logic, PIC8259A, Testbench</td>
       </tr>
       <tr>
         <td>Ahmad Mahfouz</td>
         <td>2002238</td>
         <td><a href="https://github.com/rye141200">rye141200</a></td>
-        <td>Write logic(Read write block),PIC8259A</td>
+        <td>Control logic, Write logic,PIC8259A, report</td>
       </tr>
       <tr>
         <td>Mohammed Mostafa</td>
         <td>2001299</td>
         <td><a href="https://github.com/mohamed-most">mohamed-most</a></td>
-        <td>Interrupt logic (ISR, IRR,Priority resolver)</td>
+        <td>Interrupt logic, report</td>
       </tr>
     </table>
     </ul>
