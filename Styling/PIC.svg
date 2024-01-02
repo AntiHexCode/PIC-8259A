@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <text x="10" y="40" font-family="Arial" font-size="30" fill="white">
+    <animate attributeName="fill" values="white;#158B0B;white" dur="4s" repeatCount="indefinite" />
+    8259A PIC
+  </text>
+</svg>
