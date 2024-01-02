@@ -132,6 +132,41 @@
         <td>1 bit output, a flag to indicate the current command word is OCW3</td>
       </tr>
     </table>
+    <h3>Cascade logic signals</h3>
+      <table>
+    <tr>
+      <th>Signal</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>SP</td>
+      <td>input, 1'b1 if the module is a master, 1'b0 if the module is a slave and it's always an input for cascade mode (disregard the Buffer mode)</td>
+    </tr>
+    <tr>
+      <td>SNGL</td>
+      <td>input, 1'b1 if the module is in single mode, 1'b0 if the module is in cascade mode</td>
+    </tr>
+    <tr>
+      <td>ICW3</td>
+      <td>input, 8-bit vector that contains the interrupt address of the module</td>
+    </tr>
+    <tr>
+      <td>Interrupt_Location</td>
+      <td>input, 3-bit vector that contains the location of the current interrupting slave on the interrupt inputs for the IRR of the master</td>
+    </tr>
+    <tr>
+      <td>CAS (Input)</td>
+      <td>input, for slaves it's an input coming from the master and it's an acknowledgement from the master that the slave is enabled</td>
+    </tr>
+    <tr>
+      <td>CAS (Output)</td>
+      <td>output, for master it's an output that goes to the slaves and it's an acknowledgement from the master that the slave is enabled</td>
+    </tr>
+    <tr>
+      <td>Address_Write_Enable</td>
+      <td>output, 1'b1 if the module is allowed to send the interrupt address vector to the data bus, 1'b0 otherwise</td>
+    </tr>
+  </table>
   </ul>
   </details>
   <details>
