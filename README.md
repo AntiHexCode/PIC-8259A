@@ -2,14 +2,14 @@
 <ul>
   <h2><img src="Styling/list.png" width=30 height=25/>  Table of contents:</h2>
   <ul>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project?tab=readme-ov-file#-overview">Overview</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-sequence-of-operation">Sequence of operation</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-block-diagrams">Block diagrams</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-signals">Signals</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-simulation">Simulation</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-testbench-methodolgy">Testbench methodolgy</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-modifications">Modifications</a></li>
-    <li><a href="https://github.com/rye141200/8259-PIC-Interrupt-project/tree/main?tab=readme-ov-file#-team-members">Team members and contribution</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-overview">Overview</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-sequence-of-operation">Sequence of operation</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-block-diagrams">Block diagrams</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-signals">Signals</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-simulation">Simulation</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-testbench-methodolgy">Testbench methodolgy</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-modifications">Modifications</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-team-members">Team members and contribution</a></li>
   </ul>
   <details>
   <summary><img src="Styling/overview.png" width=30 height=30/><h2> Overview</h2></summary>
