@@ -152,6 +152,25 @@
         <td><img src="Read Write Control Logic/ICW4 Missing.png"/>ICW4 isn't written</td>
       </tr>
     </table>
+    <h3>Control logic simulation</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim1.png"/></td>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim2.png"/></td>
+      </tr>
+      <tr>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim3.png"/></td>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim4.png"/></td>
+      </tr>
+      <tr>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim5.png"/></td>
+        <td><img src="Read Write Control Logic/ControlLogicTBSim6.png"/></td>
+      </tr>
+    </table>
   </details>
   <details>
     <summary><img src="Styling/test.png" width=30 height=30/><h2> Testbench methodolgy</h2></summary>
