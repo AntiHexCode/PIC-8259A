@@ -64,7 +64,7 @@
   <details>
     <summary><img src="Styling/blocks.png" width=30 height=30/><h2> Block diagrams</h2></summary>
     <ul>
-      <img src="Control Logic/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
+      <img src="Read Write Control Logic/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
       <img src="Read Write Control Logic/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
       to make all blocks initialize their states and work correctly.</p>
     </ul>
@@ -73,7 +73,7 @@
     <summary><img src="Styling/signals.png" width=30 height=30/><h2> Signals</h2></summary>
     <ul>
       <h3>Control logic signals (click on picture for better view)</h3>
-       <img src="Control Logic/ControlLogicPorts.png"/>
+       <img src="Read Write Control Logic/ControlLogicPorts.png"/>
     <h3>R/W logic signals</h3>
     <table>
       <tr>
@@ -144,12 +144,12 @@
         <th></th>
       </tr>
       <tr>
-        <td><img src="Read Write Logic/all command words.png"/> All command words written</td>
-        <td><img src="Read Write Logic/ICW3 and ICW4 Missing.png"/>ICW3 and ICW4 aren't written</td>
+        <td><img src="Read Write Control Logic/all command words.png"/> All command words written</td>
+        <td><img src="Read Write Control Logic/ICW3 and ICW4 Missing.png"/>ICW3 and ICW4 aren't written</td>
       </tr>
       <tr>
-        <td><img src="Read Write Logic/ICW3 Missing.png"/>ICW3 isn't written</td>
-        <td><img src="Read Write Logic/ICW4 Missing.png"/>ICW4 isn't written</td>
+        <td><img src="Read Write Control Logic/ICW3 Missing.png"/>ICW3 isn't written</td>
+        <td><img src="Read Write Control Logic/ICW4 Missing.png"/>ICW4 isn't written</td>
       </tr>
     </table>
   </details>
@@ -196,12 +196,6 @@
         <td>2001299</td>
         <td><a href="https://github.com/mohamed-most">mohamed-most</a></td>
         <td>Interrupt logic (ISR, IRR,Priority resolver)</td>
-      </tr>
-      <tr>
-        <td>Mohammed Montasser</td>
-        <td>2100416</td>
-        <td><a href="https://github.com/MohamedMontasser03">MohamedMontasser03</a></td>
-        <td>Cascade logic block, Interrupt logic</td>
       </tr>
     </table>
     </ul>
