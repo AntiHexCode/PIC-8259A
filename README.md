@@ -65,9 +65,8 @@
     <summary><img src="Styling/blocks.png" width=30 height=30/><h2> Block diagrams</h2></summary>
     <ul>
       <img src="Control Logic/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
-      <img src="Read Write Logic/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
+      <img src="Read Write Control Logic/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
       to make all blocks initialize their states and work correctly.</p>
-      <img src="Styling/Cascade Block.jpeg" width=512 height=512/><p>Cascade logic block diagram, handles the case of cascading multiple PICs in order to extend interrupt requests up to 64, it deals with both master and slave configurations</p>
     </ul>
   </details>
   <details>
