@@ -21,9 +21,8 @@
       <p>
       <storng>The design was divided into 4 major blocks as follows:</storng>
       <ul>
-        <li>Control logic block</li>
+        <li>Read Write Control logic block</li>
         <li>Interrupt logic block</li>
-        <li>Read Write logic block</li>
         <li>Cascade logic block</li>
       </ul>
     </p>
