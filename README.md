@@ -154,9 +154,6 @@
     </table>
   </details>
   <details>
-    <summary><img src="Styling/test.png" width=30 height=30/><h2> Testbench methodolgy</h2></summary>
-  </details>
-  <details>
     <summary><img src="Styling/modification.png" width=30 height=30/><h2> Modifications</h2></summary>
     <ul>
       <li>R/W logic works with an internal clock, since the command words need some form of sequence to operate, a clock was needed to enhance and ease the design of the logic of command words</li>
@@ -189,7 +186,7 @@
         <td>Ahmad Mahfouz</td>
         <td>2002238</td>
         <td><a href="https://github.com/rye141200">rye141200</a></td>
-        <td>Read Write Logic, PIC8259A, Report</td>
+        <td>Write Logic,Control logic, PIC8259A, Report</td>
       </tr>
       <tr>
         <td>Mohammed Mostafa</td>
