@@ -66,7 +66,8 @@
     <ul>
       <img src="Control Logic/Block Diagram/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
       <img src="Read Write Logic/Block Diagram/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
-      to make all blocks initialize their states and work correctly.</p>
+      to make all blocks initialize their states and work correctly</p>
+      <img src="Cascade Logic/Block Diagram/Block.png" width=512 height=512/><p>Instead of just 8 devices connected to the PIC, we can extend that up to 64 devices using the Cascade Logic Module</p>
     </ul>
   </details>
   <details>
@@ -132,47 +133,25 @@
         <td>OCW3Flag</td>
         <td>1 bit output, a flag to indicate the current command word is OCW3</td>
       </tr>
-    </table>
-    <h3>Cascade logic signals</h3>
-      <table>
-    <tr>
-      <th>Signal</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>SP</td>
-      <td>input, 1'b1 if the module is a master, 1'b0 if the module is a slave and it's always an input for cascade mode (disregard the Buffer mode)</td>
-    </tr>
-    <tr>
-      <td>SNGL</td>
-      <td>input, 1'b1 if the module is in single mode, 1'b0 if the module is in cascade mode</td>
-    </tr>
-    <tr>
-      <td>ICW3</td>
-      <td>input, 8-bit vector that contains the interrupt address of the module</td>
-    </tr>
-    <tr>
-      <td>Interrupt_Location</td>
-      <td>input, 3-bit vector that contains the location of the current interrupting slave on the interrupt inputs for the IRR of the master</td>
-    </tr>
-    <tr>
-      <td>CAS (Input)</td>
-      <td>input, for slaves it's an input coming from the master and it's an acknowledgement from the master that the slave is enabled</td>
-    </tr>
-    <tr>
-      <td>CAS (Output)</td>
-      <td>output, for master it's an output that goes to the slaves and it's an acknowledgement from the master that the slave is enabled</td>
-    </tr>
-    <tr>
-      <td>Address_Write_Enable</td>
-      <td>output, 1'b1 if the module is allowed to send the interrupt address vector to the data bus, 1'b0 otherwise</td>
-    </tr>
-  </table>
+       <h3>Cascade signals (click on picture for better view)</h3>
+       <img src="Cascade Logic/Block Diagram/Block Pins.png"/>
   </ul>
   </details>
   <details>
     <summary><img src="Styling/simmulation.png" width=30 height=30/><h2> Simulation</h2></summary>
-    <h3>R/W logic simualtion</h3>
+    <h3>PIC8259A Simulation</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><img src="PIC8259A/Test Bench/1.png"/></td>
+        <td><img src="PIC8259A/Test Bench/1.png"/></td>
+        <td><img src="PIC8259A/Test Bench/1.png"/></td>
+      </tr>
+    </table>
+    <h3>R/W Logic Simualtion</h3>
     <table>
       <tr>
         <th></th>
@@ -187,7 +166,7 @@
         <td><img src="Read Write Logic/Test Bench/ICW4 Missing.png"/>ICW4 isn't written</td>
       </tr>
     </table>
-    <h3>Control logic simulation</h3>
+    <h3>Control Logic simulation</h3>
     <table>
       <tr>
         <th></th>
@@ -204,6 +183,26 @@
       <tr>
         <td><img src="Control Logic/Test Bench/ControlLogicTBSim5.png"/></td>
         <td><img src="Control Logic/Test Bench/ControlLogicTBSim6.png"/></td>
+      </tr>
+    </table>
+    <h3>Interrupt Logic Simulation</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><img src="Interrupt Logic/Test Bench/InterruptLogicTBSim.png"/></td>
+      </tr>
+    </table>
+    <h3>Cascade Logic Simulation</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><img src="Cascade Logic/Test Bench/1.png"/></td>
       </tr>
     </table>
   </details>
