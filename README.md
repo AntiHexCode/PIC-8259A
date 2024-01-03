@@ -146,9 +146,9 @@
         <th></th>
       </tr>
       <ul>
-        <img src="PIC8259A/Test Bench/1.png"/>
-        <img src="PIC8259A/Test Bench/1.png"/>
-        <img src="PIC8259A/Test Bench/1.png"/>
+        <img src="PIC8259A/Test Bench/1/1.png"/>
+        <img src="PIC8259A/Test Bench/2/2.png"/>
+        <img src="PIC8259A/Test Bench/3/3.png"/>
       </ul>
     </table>
     <h3>R/W Logic Simualtion</h3>
