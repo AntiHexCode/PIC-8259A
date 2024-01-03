@@ -67,6 +67,7 @@
       <img src="Control Logic/Block Diagram/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
       <img src="Read Write Logic/Block Diagram/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
       to make all blocks initialize their states and work correctly</p>
+      <img src="Interrupt Logic/Block Diagram/Block.png" width=512 height=512/><p>To serve an interrupt, you have to notice it first. Handling multiple interrupts at the same time determining which has the highest priority, that is part of the Interrupt Logic Module's job</p>
       <img src="Cascade Logic/Block Diagram/Block.png" width=512 height=512/><p>Instead of just 8 devices connected to the PIC, we can extend that up to 64 devices using the Cascade Logic Module</p>
     </ul>
   </details>
@@ -77,6 +78,8 @@
        <img src="Control Logic/Block Diagram/ControlLogicPorts.png"/>
       <h3>R/W Logic Signals (click on picture for better view)</h3>
        <img src="Read Write Logic/Block Diagram/ReadWriteLogicPins.png"/>
+      <h3>Cascade Logic Signals (click on picture for better view)</h3>
+       <img src="Interrupt Logic/Block Diagram/BlockPins.png"/>
       <h3>Cascade Logic Signals (click on picture for better view)</h3>
        <img src="Cascade Logic/Block Diagram/Block Pins.png"/>
     
