@@ -1,0 +1,5 @@
+- No Cascading (SNGL = 1, NO ICW3)
+- three interrupts were sent (IR3 has the highest priority)
+- No Masking
+- AEOI
+- At the end IRR was read by CPU
