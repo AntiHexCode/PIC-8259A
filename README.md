@@ -146,9 +146,9 @@
         <th></th>
       </tr>
       <ul>
-        <td><img src="PIC8259A/Test Bench/1.png"/></td>
-        <td><img src="PIC8259A/Test Bench/1.png"/></td>
-        <td><img src="PIC8259A/Test Bench/1.png"/></td>
+        <img src="PIC8259A/Test Bench/1.png"/>
+        <img src="PIC8259A/Test Bench/1.png"/>
+        <img src="PIC8259A/Test Bench/1.png"/>
       </ul>
     </table>
     <h3>R/W Logic Simualtion</h3>
@@ -159,7 +159,7 @@
       </tr>
       <tr>
         <td><img src="Read Write Logic/Test Bench/all command words.png"/> All command words written</td>
-        <td><img src="Read Write Control Logic/ICW3 and ICW4 Missing.png"/>ICW3 and ICW4 aren't written</td>
+        <td><img src="Read Write Logic/Test Bench/ICW3 and ICW4 Missing.png"/>ICW3 and ICW4 aren't written</td>
       </tr>
       <tr>
         <td><img src="Read Write Logic/Test Bench/ICW3 Missing.png"/>ICW3 isn't written</td>
