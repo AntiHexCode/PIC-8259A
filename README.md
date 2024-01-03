@@ -37,7 +37,7 @@
         <li>Expandable to 64 Levels via cascading</li>
         <li>Handling interrupts in fully-nested mode</li>
         <li>Interrupt masking compatible</li>
-        <li>EOI/AEOI supportive</li>
+        <li>AEOI supportive</li>
         <li>supportive for reading status</li>
       </ul>
     </p>
@@ -201,3 +201,4 @@
     </ul>
   </details>
 </ul>
+Note that: The ICONS used in this README are from: <a href="https://www.flaticon.com">Flaticon</a>
