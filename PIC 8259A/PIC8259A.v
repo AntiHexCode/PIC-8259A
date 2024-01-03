@@ -3,7 +3,7 @@ input CS,
 input WR,
 input RD,
 input [7:0] DBus,
-input [2:0] CASBus,
+inout [2:0] CASBus,
 input GND,
 input SPEN,
 input [7:0] IRBus,
@@ -32,6 +32,9 @@ output wire INT);
   wire AR = (R && ~SL && EOI) || (R && ~SL && ~EOI) || (~R && ~SL && ~EOI) || (R && SL && EOI);
   wire decInterruptLocation;
   wire interruptLocation;
+
+  wire sPermissionToWrite;
+  wire mPermissionToWrite;
 
 
 	/*
@@ -113,6 +116,19 @@ InterruptLogic ILInstance(
 );
 
 
+CascadeLogic CascadeInstance(
+
+.SPEN(SPEN),
+.SReg(SReg),
+.decInterruptLocation(decInterruptLocation),
+.interruptLocation(interruptLocation),
+.CASBus(CASBus),
+.sPermissionToWrite(sPermissionToWrite),
+.mPermissionToWrite(mPermissionToWrite)
+
+);
+
+
 endmodule
 
 
@@ -124,7 +140,7 @@ module PIC8259ATB();
 	reg GND, VCC;
 	reg [7:0] DBus;
 	reg A0, SPEN;
-	reg [2:0] CASBus;
+	wire [2:0] CASBus;
 	reg INTA;
 	wire INT;
 
