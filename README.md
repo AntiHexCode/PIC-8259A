@@ -73,69 +73,13 @@
   <details>
     <summary><img src="Styling/signals.png" width=30 height=30/><h2> Signals</h2></summary>
     <ul>
-      <h3>Control logic signals (click on picture for better view)</h3>
+      <h3>Control Logic Signals (click on picture for better view)</h3>
        <img src="Control Logic/Block Diagram/ControlLogicPorts.png"/>
-      <h3>Cascade signals (click on picture for better view)</h3>
+      <h3>R/W Logic Signals (click on picture for better view)</h3>
+       <img src="Read Write Logic/Block Diagram/ReadWriteLogicPins.png"/>
+      <h3>Cascade Logic Signals (click on picture for better view)</h3>
        <img src="Cascade Logic/Block Diagram/Block Pins.png"/>
-    <h3>R/W logic signals</h3>
-    <table>
-      <tr>
-        <th>Signal</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>A0</td>
-        <td>1 bit input from 8086, used to identify command words</td>
-      </tr>
-      <tr>
-        <td>CS</td>
-        <td>1 bit active low input from 8086, turns on the PIC or off</td>
-      </tr>
-      <tr>
-        <td>WR</td>
-        <td>1 bit active low input from 8086, when asserted, allows writing in RW logic</td>
-      </tr>
-      <tr>
-        <td>RD</td>
-        <td>1 bit active low input from 8086, when asserted, allows reading status of PIC</td>
-      </tr>
-      <tr>
-        <td>Data Bus</td>
-        <td>8 bit buffer, carries command words from 8086. Takes data from PIC to 8086. It is the main method of communication between 8086 and PIC</td>
-      </tr>
-      <tr>
-        <td>rden</td>
-        <td>1 bit output, used by control logic to let it know that read signal is asserted</td>
-      </tr>
-      <tr>
-        <td>ICW1Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is ICW1</td>
-      </tr>
-      <tr>
-        <td>ICW2Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is ICW2</td>
-      </tr>
-      <tr>
-        <td>ICW3Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is ICW3</td>
-      </tr>
-      <tr>
-        <td>ICW4Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is ICW4</td>
-      </tr>
-      <tr>
-        <td>OCW1Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is OCW1</td>
-      </tr>
-      <tr>
-        <td>OCW2Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is OCW2</td>
-      </tr>
-      <tr>
-        <td>OCW3Flag</td>
-        <td>1 bit output, a flag to indicate the current command word is OCW3</td>
-      </tr>
-  </ul>
+    
   </details>
   <details>
     <summary><img src="Styling/simmulation.png" width=30 height=30/><h2> Simulation</h2></summary>
@@ -146,9 +90,9 @@
         <th></th>
       </tr>
       <ul>
-        <img src="PIC8259A/Test Bench/1/1.png"/>
-        <img src="PIC8259A/Test Bench/2/2.png"/>
-        <img src="PIC8259A/Test Bench/3/3.png"/>
+        <img src="PIC 8259A/Test Bench/1/1.png"/>
+        <img src="PIC 8259A/Test Bench/2/2.png"/>
+        <img src="PIC 8259A/Test Bench/3/3.png"/>
       </ul>
     </table>
     <h3>R/W Logic Simualtion</h3>
