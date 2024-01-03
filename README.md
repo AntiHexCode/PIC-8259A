@@ -7,7 +7,7 @@
     <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-block-diagrams">Block diagrams</a></li>
     <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-signals">Signals</a></li>
     <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-simulation">Simulation</a></li>
-    <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-testbench-methodolgy">Testbench methodolgy</a></li>
+    <li><a href="https://github.com/AntiHexCode/PIC-8259A?tab=readme-ov-file#testbench-methodolgy">Testbench methodolgy</a></li>
     <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-modifications">Modifications</a></li>
     <li><a href="https://github.com/AntiHexCode/PIC-8259A/tree/main?tab=readme-ov-file#-team-members">Team members and contribution</a></li>
   </ul>
