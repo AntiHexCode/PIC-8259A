@@ -154,6 +154,20 @@
     </table>
   </details>
   <details>
+    <summary><img src="Styling/test.png" width=30 height=30/> <h2>Testbench methodolgy</h2></summary>
+    <ul>
+      <li>Initializing using command words (ICWs), testing all possible cases of missing ICW3 and ICW4, and their existence</li>
+      <li>Writing command words</li>
+      <li>Setting interrupt requests</li>
+      <li>Testing level triggered mode</li>
+      <li>Testing edge triggered mode</li>
+      <li>Testing fully nested mode</li>
+      <li>Testing read status mode</li>
+      <li>Testing AEOI</li>
+      <li>Testing EOI</li>
+    </ul>
+  </details>
+  <details>
     <summary><img src="Styling/modification.png" width=30 height=30/><h2> Modifications</h2></summary>
     <ul>
       <li>R/W logic works with an internal clock, since the command words need some form of sequence to operate, a clock was needed to enhance and ease the design of the logic of command words</li>
