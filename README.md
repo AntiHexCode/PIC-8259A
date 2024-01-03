@@ -21,7 +21,8 @@
       <p>
       <storng>The design was divided into 4 major blocks as follows:</storng>
       <ul>
-        <li>Read Write Control logic block</li>
+        <li>Read Write logic block</li>
+        <li>Control logic block</li>
         <li>Interrupt logic block</li>
         <li>Cascade logic block</li>
       </ul>
@@ -34,7 +35,7 @@
         <li>Single +5V supply, no master clock</li>
         <li>Eight-Level Priority Controller</li>
         <li>Expandable to 64 Levels via cascading</li>
-        <li>Handling interrupts in fully-nested mode/automatic roation</li>
+        <li>Handling interrupts in fully-nested mode</li>
         <li>Interrupt masking compatible</li>
         <li>EOI/AEOI supportive</li>
         <li>supportive for reading status</li>
@@ -63,8 +64,8 @@
   <details>
     <summary><img src="Styling/blocks.png" width=30 height=30/><h2> Block diagrams</h2></summary>
     <ul>
-      <img src="Read Write Control Logic/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
-      <img src="Read Write Control Logic/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
+      <img src="Control Logic/Block Diagram/ControlLogicBlock.png" width=512 height=512/><p>Control logic block diagram, the mastermind of the PIC, takes flags from R/W logic, parses the data to give it to other blocks</p>
+      <img src="Read Write Logic/Block Diagram/RWLogic diagram.png" width=512 height=512/><p>Read write logic block diagram, this block deals with 8086 directly, recieving command words, writing them and sending flags to the control logic 
       to make all blocks initialize their states and work correctly.</p>
     </ul>
   </details>
@@ -72,7 +73,7 @@
     <summary><img src="Styling/signals.png" width=30 height=30/><h2> Signals</h2></summary>
     <ul>
       <h3>Control logic signals (click on picture for better view)</h3>
-       <img src="Read Write Control Logic/ControlLogicPorts.png"/>
+       <img src="Control Logic/Block Diagram/ControlLogicPorts.png"/>
     <h3>R/W logic signals</h3>
     <table>
       <tr>
@@ -178,12 +179,12 @@
         <th></th>
       </tr>
       <tr>
-        <td><img src="Read Write Control Logic/all command words.png"/> All command words written</td>
+        <td><img src="Read Write Logic/Test Bench/all command words.png"/> All command words written</td>
         <td><img src="Read Write Control Logic/ICW3 and ICW4 Missing.png"/>ICW3 and ICW4 aren't written</td>
       </tr>
       <tr>
-        <td><img src="Read Write Control Logic/ICW3 Missing.png"/>ICW3 isn't written</td>
-        <td><img src="Read Write Control Logic/ICW4 Missing.png"/>ICW4 isn't written</td>
+        <td><img src="Read Write Logic/Test Bench/ICW3 Missing.png"/>ICW3 isn't written</td>
+        <td><img src="Read Write Logic/Test Bench/ICW4 Missing.png"/>ICW4 isn't written</td>
       </tr>
     </table>
     <h3>Control logic simulation</h3>
@@ -193,16 +194,16 @@
         <th></th>
       </tr>
       <tr>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim1.png"/></td>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim2.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim1.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim2.png"/></td>
       </tr>
       <tr>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim3.png"/></td>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim4.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim3.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim4.png"/></td>
       </tr>
       <tr>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim5.png"/></td>
-        <td><img src="Read Write Control Logic/ControlLogicTBSim6.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim5.png"/></td>
+        <td><img src="Control Logic/Test Bench/ControlLogicTBSim6.png"/></td>
       </tr>
     </table>
   </details>
@@ -236,19 +237,19 @@
         <td>Abdullah Mohammed</td>
         <td>2001803</td>
         <td><a href="https://github.com/AntiHexCode">AntiHexCode</a></td>
-        <td>Control logic, Read Logic, PIC8259A, Testbench</td>
+        <td>Control Logic, Read Logic, PIC8259A, Cascade Logic, Interrupt Logic</td>
       </tr>
       <tr>
         <td>Ahmad Mahfouz</td>
         <td>2002238</td>
         <td><a href="https://github.com/rye141200">rye141200</a></td>
-        <td>Control logic, Write logic,PIC8259A, report</td>
+        <td>Read Write Logic, PIC8259A, Report</td>
       </tr>
       <tr>
         <td>Mohammed Mostafa</td>
         <td>2001299</td>
         <td><a href="https://github.com/mohamed-most">mohamed-most</a></td>
-        <td>Interrupt logic, report</td>
+        <td>Interrupt Logic, Report</td>
       </tr>
     </table>
     </ul>
