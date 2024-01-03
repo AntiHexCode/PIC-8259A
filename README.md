@@ -145,11 +145,11 @@
         <th></th>
         <th></th>
       </tr>
-      <tr>
+      <ul>
         <td><img src="PIC8259A/Test Bench/1.png"/></td>
         <td><img src="PIC8259A/Test Bench/1.png"/></td>
         <td><img src="PIC8259A/Test Bench/1.png"/></td>
-      </tr>
+      </ul>
     </table>
     <h3>R/W Logic Simualtion</h3>
     <table>
@@ -191,9 +191,9 @@
         <th></th>
         <th></th>
       </tr>
-      <tr>
+      <ul>
         <td><img src="Interrupt Logic/Test Bench/InterruptLogicTBSim.png"/></td>
-      </tr>
+      </ul>
     </table>
     <h3>Cascade Logic Simulation</h3>
     <table>
@@ -201,9 +201,9 @@
         <th></th>
         <th></th>
       </tr>
-      <tr>
+      <ul>
         <td><img src="Cascade Logic/Test Bench/1.png"/></td>
-      </tr>
+      </ul>
     </table>
   </details>
   <details>
