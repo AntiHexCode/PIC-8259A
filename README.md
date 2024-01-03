@@ -159,12 +159,9 @@
       <li>Initializing using command words (ICWs), testing all possible cases of missing ICW3 and ICW4, and their existence</li>
       <li>Writing command words</li>
       <li>Setting interrupt requests</li>
-      <li>Testing level triggered mode</li>
-      <li>Testing edge triggered mode</li>
       <li>Testing fully nested mode</li>
       <li>Testing read status mode</li>
       <li>Testing AEOI</li>
-      <li>Testing EOI</li>
     </ul>
   </details>
   <details>
