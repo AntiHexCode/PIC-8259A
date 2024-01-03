@@ -1,13 +1,104 @@
 module ISR(
-    input reg [7:0] irr,     // Input interrupt request signals
-    output reg [2:0] dataOnbus,    // Output interrupt service signals as priority number
-    input  reg [2:0] vectorFrompriorityreolver , 
-    input [7:0]isrFromPriorityResolver , 
-    output [7:0]isr , 
-    input inta , 
-              
+    input  reg [7:0] irr,     // Input interrupt request signals
+    output reg [2:0] isr,    // Output interrupt service signals as priority number from priority resolver 
+    input [2:0] highestPriority,      // Input priority signal
+    input inta, // active high 
+   
+    input AEOI, 
+    output  reg [7:0] out_irr 
 );
-  integer i;
 
+
+reg [7:0] isr_internal  ; 
+
+always @(irr)
+begin 
+  out_irr = irr  ;
+end
+   always @*
+   begin 
+  case (highestPriority)
+              3'b000: isr_internal = 8'b00000001;
+              3'b001: isr_internal = 8'b00000010;
+              3'b010: isr_internal = 8'b00000100;
+              3'b011: isr_internal = 8'b00001000;
+              3'b100: isr_internal = 8'b00010000;
+              3'b101: isr_internal = 8'b00100000;
+              3'b110: isr_internal = 8'b01000000;
+              3'b111: isr_internal = 8'b10000000;
+              default: isr_internal = 8'b00000000;
+          endcase
+          servedDone = 0 ; 
+          
+ end
+  
+  always @(inta)
+    begin 
+  isr = highestPriority ; 
+  servedDone =1 ; 
+    case(isr_internal)
+            8'b00000001: out_irr = out_irr & (~8'b00000001);
+            8'b00000010: out_irr = out_irr & (~8'b00000010);
+            8'b00000100: out_irr = out_irr & (~8'b00000100);
+            8'b00001000: out_irr = out_irr & (~8'b00001000);
+            8'b00010000: out_irr = out_irr & (~8'b00010000);
+            8'b00100000: out_irr = out_irr & (~8'b00100000);
+            8'b01000000: out_irr = out_irr & (~8'b01000000);
+            8'b10000000: out_irr = out_irr & (~8'b10000000);
+        endcase
+      if (AEOI)
+        begin         
+                  isr_internal = 8'b00000000 ; 
+           isr=3'bzzz;
+      end 
+    
+    end 
+   
+   
+endmodule
+
+
+
+
+
+module ISR_tb;
+
+reg [7:0] irr;               // Input interrupt request signals
+reg [2:0] highestPriority;   // Input priority signal
+reg inta;                    // Active high signal
+wire [2:0] isr;              // Output interrupt service signals as priority number from priority resolver 
+wire servedDone;               // Output signal indicating service done
+reg AEOI;                     // Output signal indicating end of interrupt
+wire [7:0] out_irr;            // Output signal indicating modified interrupt request signals
+
+// Instantiate the ISR module
+ISR isr_inst (
+    .irr(irr),
+    .isr(isr),
+    .highestPriority(highestPriority),
+    .inta(inta),
+  
+    .AEOI(AEOI),
+    .out_irr(out_irr)
+);
+
+// Stimulus
+initial begin
+    // Test Case 1
+    #10 
+    irr = 8'b00000001;
+    highestPriority = 3'b000;
+    inta = 1;
+    
+    #30 inta = 0 ;  
+    AEOI=1 ; 
+    
+
+
+
+end
 
 endmodule
+
+
+
