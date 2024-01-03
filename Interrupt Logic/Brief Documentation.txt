@@ -1,0 +1,40 @@
+Interrupt Logic Module Documentation:
+
+InterruptLogicDUT:
+
+Inputs:
+
+IRBus: 8-bit Bus for Interrupt Requests (IR7-IR0).
+LTIM: Level Triggered Interrupt Mode.
+SFNM: Special Fully Nested Mode.
+AR: Automatic Rotation Mode.
+AEOI: Automatic End Of Interrupt.
+TReg: 5-bit register for getting interrupt vector address.
+IMR: 8-bit Interrupt Mask Register.
+readIRR: Read Status flag for IRR.
+readISR: Read Status flag for ISR.
+INTA: Interrupt Acknowledge (Active low).
+Outputs:
+
+INT: Interrupt signal.
+internalBus: 16-bit internal bus (TReg + interruptLocation).
+interruptLocation: 3-bit location of the interrupt in the IRBus (000->111).
+IRR: 8-bit Interrupt Request Register.
+Description:
+
+Monitors rising edges on each bit of IRBus.
+Updates IRR based on IMR and ISR.
+Determines the highest priority interrupt based on the selected mode.
+Generates interrupt acknowledgment (INT) and internal bus data (internalBus).
+Handles interrupt clearing, rotation, and end-of-interrupt conditions.
+InterruptLogicTB:
+
+Testbench for InterruptLogicDUT:
+
+Initializes input signals and simulates the behavior of InterruptLogicDUT.
+Demonstrates scenarios with different interrupt requests, acknowledgment cycles, and read operations on IRR and ISR.
+Initial Simulation:
+
+Initializes signals and performs a series of actions to simulate different scenarios.
+Tests various interrupt conditions, acknowledgment cycles, and read operations.
+Note: Please verify and adjust the provided test scenarios based on your specific requirements and the expected behavior of the Interrupt Logic module. Ensure that the simulation results match the desired functionality of the design.
