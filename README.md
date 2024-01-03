@@ -75,6 +75,8 @@
     <ul>
       <h3>Control logic signals (click on picture for better view)</h3>
        <img src="Control Logic/Block Diagram/ControlLogicPorts.png"/>
+      <h3>Cascade signals (click on picture for better view)</h3>
+       <img src="Cascade Logic/Block Diagram/Block Pins.png"/>
     <h3>R/W logic signals</h3>
     <table>
       <tr>
@@ -133,8 +135,6 @@
         <td>OCW3Flag</td>
         <td>1 bit output, a flag to indicate the current command word is OCW3</td>
       </tr>
-       <h3>Cascade signals (click on picture for better view)</h3>
-       <img src="Cascade Logic/Block Diagram/Block Pins.png"/>
   </ul>
   </details>
   <details>
