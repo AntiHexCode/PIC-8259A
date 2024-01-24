@@ -17,7 +17,7 @@
     <p>
       This project simulates 8259A PIC behavior using verilog, PIC is short for 
       <strong>P</strong>rogrammable <strong>I</strong>nterrupt <strong>C</strong>ontroller. The design
-      was inspired from the <a href="https://drive.google.com/file/d/1ff_bdktK6zrH54DNJ6saOl5jdVz1-0MY/view?usp=drive_link">Intel datasheet</a> with some modifications.</p>
+      was inspired from the <a href="https://drive.google.com/file/d/1ff_bdktK6zrH54DNJ6saOl5jdVz1-0MY/view?usp=drive_link">Intel datasheet</a> with modifications. It's worth noting that the project in not compelete untill this point, and also some of the images below (Signals, Block Diagrams, etc) might contain some un-updated information with respect to the latest used code.</p>
       <p>
       <storng>The design was divided into 4 major blocks as follows:</storng>
       <ul>
@@ -34,7 +34,7 @@
         <li>Programmable</li>
         <li>Single +5V supply, no master clock</li>
         <li>Eight-Level Priority Controller</li>
-        <li>Expandable to 64 Levels via cascading</li>
+        <li>Expandable to 64 Levels via cascading (not compelete)</li>
         <li>Handling interrupts in fully-nested mode</li>
         <li>Interrupt masking compatible</li>
         <li>AEOI supportive</li>
@@ -197,7 +197,7 @@
         <td>Ahmad Mahfouz</td>
         <td>2002238</td>
         <td><a href="https://github.com/rye141200">rye141200</a></td>
-        <td>Write Logic,Control logic, PIC8259A, Report</td>
+        <td>Write Logic, Control logic, PIC8259A, Report</td>
       </tr>
       <tr>
         <td>Mohammed Mostafa</td>
