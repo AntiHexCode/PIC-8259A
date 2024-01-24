@@ -1,5 +1,7 @@
 Interrupt Logic Module Documentation:
 
+Note that: some of the following wasn't done yet (or was done differently).
+
 InterruptLogicDUT:
 
 Inputs:
